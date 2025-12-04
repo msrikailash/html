@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS and JS Examples</title>
+    
+    <!-- INTERNAL CSS -->
+    <style>
+        .box {
+            padding: 20px;
+            margin: 10px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS and JavaScript Methods</h1>
+    
+    <!-- 1. INTERNAL CSS -->
+    <div class="box">
+        <h2>1. Internal CSS</h2>
+        <p>Styled using &lt;style&gt; tag in head</p>
+    </div>
+    
+    <!-- 2. INLINE CSS -->
+    <div style="padding: 20px; margin: 10px; background-color: lightcoral;">
+        <h2>2. Inline CSS</h2>
+        <p>Styled using style attribute directly</p>
+    </div>
+    
+    <!-- 3. EXTERNAL CSS (linked file) -->
+    <div class="external-box">
+        <h2>3. External CSS</h2>
+        <p>Styled using external stylesheet (styles.css)</p>
+    </div>
+    
+    <!-- INTERNAL JAVASCRIPT -->
+    <script>
+        function showMessage() {
+            alert("This is Internal JavaScript");
+        }
+    </script>
+    
+    <!-- 1. INLINE JAVASCRIPT -->
+    <button onclick="alert('This is Inline JavaScript')">
+        Click - Inline JS
+    </button>
+    
+    <!-- 2. INTERNAL JAVASCRIPT -->
+    <button onclick="showMessage()">
+        Click - Internal JS
+    </button>
+    
+    <!-- 3. EXTERNAL JAVASCRIPT (linked file) -->
+    <button id="extBtn">Click - External JS</button>
+    <script src="script.js"></script>
+</body>
+</html>
+l

@@ -1,0 +1,130 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #1a1a2e; /* Dark blue/black background */
+    color: #ff6b6b; /* Reddish/Coral color for brand */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ff6b6b;
+}
+
+nav a {
+    text-decoration: none;
+    color: #888;
+    margin-left: 20px;
+    font-size: 14px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+nav a:hover, nav a.active {
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    /* Using a university-like placeholder image from Unsplash */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 40px 60px;
+    border-radius: 0;
+    text-align: center;
+    color: white;
+    width: 500px;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.hero-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.logo-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-placeholder {
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.2);
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: rgba(0,0,0,0.2);
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    background: white;
+    color: #333;
+}
+
+/* Decorative Lines */
+.hero-content::before, .hero-content::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ff6b6b;
+    margin: 10px 0;
+    opacity: 0.7;
+}
+
+.hero-content h1 {
+    position: relative;
+}

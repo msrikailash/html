@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardhaman College of Engineering</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Sticky Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Top Bar - Orange */
+        .top-bar {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 8px 0;
+            font-size: 0.85rem;
+        }
+
+        .top-bar .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .top-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Header - White with College Info */
+        .main-header {
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .main-header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-section img {
+            height: 60px;
+        }
+
+        .college-info h1 {
+            font-size: 1.3rem;
+            color: #002147;
+            margin-bottom: 3px;
+        }
+
+        .college-info p {
+            font-size: 0.75rem;
+            color: #666;
+            margin: 2px 0;
+        }
+
+        .header-right {
+            text-align: right;
+        }
+
+        .header-right p {
+            font-size: 0.85rem;
+            color: #002147;
+            margin: 3px 0;
+        }
+
+        .header-right strong {
+            color: #ff6600;
+        }
+
+        /* Navigation Bar - Dark Blue */
+        .navbar {
+            background-color: #002147;
+            padding: 0;
+        }
+
+        .navbar .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .navbar li {
+            position: relative;
+        }
+
+        .navbar li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+
+        .navbar li a:hover {
+            background-color: #ff6600;
+        }
+
+        /* Dropdown Menu */
+        .navbar li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            min-width: 220px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            flex-direction: column;
+        }
+
+        .navbar li:hover>ul {
+            display: flex;
+        }
+
+        .navbar li ul li {
+            width: 100%;
+        }
+
+        .navbar li ul li a {
+            color: #333;
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+            text-transform: none;
+            font-weight: 400;
+        }
+
+        .navbar li ul li a:hover {
+            background: #f4f4f4;
+            color: #ff6600;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: #002147;
+            margin-bottom: 10px;
+        }
+
+        .section-title .line {
+            width: 60px;
+            height: 3px;
+            background-color: #ff6600;
+            margin: 0 auto;
+        }
+
+        /* Why Vardhaman Grid */
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .highlight-item {
+            background: #fff;
+            padding: 30px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .highlight-item:hover {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+            border-color: #ff6600;
+        }
+
+        .highlight-item .icon {
+            width: 60px;
+            height: 60px;
+            background: #002147;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 20px;
+        }
+
+        .highlight-item h3 {
+            color: #002147;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .highlight-item p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section */
+        .about-content {
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 8px;
+            line-height: 1.8;
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #ccc;
+            padding: 40px 20px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo-section {
+                flex-direction: column;
+            }
+
+            .header-right {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .navbar li ul {
+                position: static;
+                box-shadow: none;
+            }
+
+            .highlights-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div>Vardhaman College of Engineering</div>
+                <div>
+                    <a href="#">Vision, Mission & Core Values</a>
+                    <a href="#">Campus Tour</a>
+                    <a href="#">IQAC</a>
+                    <a href="#">NAAC</a>
+                    <a href="#">NIRF</a>
+                    <a href="#">NBA</a>
+                    <a href="#">UGC</a>
+                    <a href="#" style="background: #002147; padding: 5px 15px; border-radius: 3px;">LOGIN</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="container">
+                <div class="logo-section">
+                    <img src="https://vardhaman.org/wp-content/uploads/2021/08/vardhamanlogo.png" alt="Vardhaman Logo">
+                    <div class="college-info">
+                        <h1>VARDHAMAN COLLEGE OF ENGINEERING</h1>
+                        <p>An Autonomous Institution, Affiliated to JNTUH & Approved by AICTE</p>
+                        <p>Accredited by NAAC with A++ Grade</p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <p><strong>EAMCET/ECET/ICET CODE: VMEG</strong></p>
+                    <p>College Code : 88</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">ABOUT</a>
+                        <ul>
+                            <li><a href="#">About Vardhaman</a></li>
+                            <li><a href="#">Management</a></li>
+                            <li><a href="#">Governing Body</a></li>
+                            <li><a href="#">Principal's Desk</a></li>
+                            <li><a href="#">Deans</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ADMISSIONS</a>
+                        <ul>
+                            <li><a href="#">Programmes</a></li>
+                            <li><a href="#">Admission Procedure</a></li>
+                            <li><a href="#">Fee Structure</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ACADEMICS</a></li>
+                    <li>
+                        <a href="#">RESEARCH</a>
+                        <ul>
+                            <li><a href="#">Objectives</a></li>
+                            <li><a href="#">Policies</a></li>
+                            <li><a href="#">Funded Projects</a></li>
+                            <li><a href="#">Contributions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">IPR & CONSULTANCY</a></li>
+                    <li><a href="#">TRAINING AND PLACEMENTS</a></li>
+                    <li><a href="#">INCUBATION</a></li>
+                    <li><a href="#">CAMPUS LIFE</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Why Vardhaman Section -->
+        <section class="section">
+            <div class="section-title">
+                <h2>Why Vardhaman</h2>
+                <div class="line"></div>
+            </div>
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <div class="icon">📚</div>
+                    <h3>Teaching-learning-evaluation</h3>
+                    <p>We follow the outcome-based education process with a constructive alignment of intended learning
+                        outcomes</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="highlight-item">
+                    <div class="icon">💼</div>
+                    <h3>Placements</h3>
+                    <p>Our students get placed in ace multinational companies (MNCs)</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="highlight-item">
+                    <div class="icon">🚀</div>
+                    <h3>Entrepreneurial ecosystem</h3>
+                    <p>The Center of Innovation and Entrepreneurship (CIE) at VCE provides a robust platform</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="highlight-item">
+                    <div class="icon">🏢</div>
+                    <h3>Infrastructure</h3>
+                    <p>The college is equipped with all facilities such as state-of-the-art laboratories, research
+                        centres and auditoriums</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="highlight-item">
+                    <div class="icon">🤝</div>
+                    <h3>Outreach</h3>
+                    <p>The college has a dedicated Outreach cell to grow strong bonds with the world outside</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="highlight-item">
+                    <div class="icon">🛡️</div>
+                    <h3>Student support</h3>
+                    <p>Looking into the safety concerns of the students, the college has an anti-ragging cell that
+                        ensures a ragging free campus</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="highlight-item">
+                    <div class="icon">👥</div>
+                    <h3>Co-curricular and recreational activities</h3>
+                    <p>Co-curricular and extra-curricular activities are conducted through several associations</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="highlight-item">
+                    <div class="icon">🌿</div>
+                    <h3>Green campus</h3>
+                    <p>The college campus has spread lush greenery throughout and makes it a sight to behold</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section">
+            <div class="section-title">
+                <h2>About Vardhaman</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-content">
+                <p>Vardhaman College of Engineering (VCE), a distinguished autonomous institution affiliated with JNTU,
+                    Hyderabad, is situated in the serene environs of Shamshabad, Hyderabad. Located within the tranquil
+                    Kacharam Village in the Ranga Reddy district, the campus is strategically positioned away from the
+                    urban clamor, offering an ideal setting for academic pursuits amidst nature's bounty.</p>
+                <p>The college offers a comprehensive range of academic programs, including an array of undergraduate
+                    B.Tech programs in disciplines such as Computer Science and Engineering (CSE), Information
+                    Technology (IT), Electronics and Communication Engineering (ECE), Electrical and Electronics
+                    Engineering (EEE), Mechanical Engineering (ME), and Civil Engineering (CE).</p>
+                <p>VCE has been recognized for its academic excellence with an A++ grade accreditation by the National
+                    Assessment and Accreditation Council (NAAC), achieving a remarkable CGPA of 3.58 out of 4.
+                    Furthermore, six of its undergraduate engineering programs – B.Tech in ECE, EEE, CSE, ME, CE, and
+                    IT—have been accredited by the National Board of Accreditation (NBA), New Delhi, under the
+                    prestigious Tier-1 category.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vardhaman College of Engineering. All Rights Reserved.</p>
+        <p>Kacharam, Shamshabad – 501218, Hyderabad, Telangana, India</p>
+    </footer>
+</body>
+
+</html>

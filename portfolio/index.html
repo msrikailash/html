@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio - Showcasing my work and skills">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <nav class="navbar">
+        <div class="logo">Portfolio.</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="fade-in-up">Hello, I'm <span class="highlight">Creative Dev</span></h1>
+            <p class="subtitle fade-in-up delay-1">I build digital experiences.</p>
+            <a href="#projects" class="cta-button fade-in-up delay-2">View My Work</a>
+        </div>
+        <div class="hero-visual fade-in-up delay-3">
+            <!-- Abstract visual or 3D element could go here -->
+            <div class="glass-card">
+                <div class="code-snippet">
+                    <pre><code>const developer = {
+  passion: "Coding",
+  style: "Creative",
+  status: "Ready to work"
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text glass-card">
+                    <p>I am a passionate developer who loves creating beautiful and functional websites. I specialize in modern web technologies and user-centric design.</p>
+                    <div class="skills">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>A stunning web application built with modern tech.</p>
+                        <a href="#" class="project-link">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3>Project Two</h3>
+                        <p>An interactive dashboard with real-time data.</p>
+                        <a href="#" class="project-link">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3>Project Three</h3>
+                        <p>Mobile-first e-commerce platform experience.</p>
+                        <a href="#" class="project-link">View Project &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper glass-card">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

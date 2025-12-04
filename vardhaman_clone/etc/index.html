@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardhaman College of Engineering</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-left">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="top-right">
+                    <ul class="top-links">
+                        <li><a href="#">Alumni</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#" class="login-btn"><i class="fas fa-lock"></i> LOGIN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Main Header -->
+        <div class="main-header" id="sticky-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://vardhaman.org/wp-content/uploads/2019/02/logo.png"
+                            alt="Vardhaman College of Engineering">
+                    </a>
+                </div>
+                <div class="mobile-toggle" id="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="navbar" id="navbar">
+                    <ul class="menu">
+                        <li class="has-dropdown">
+                            <a href="#">ABOUT <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Vision Mission & Core Values</a></li>
+                                <li><a href="#">Campus Tour</a></li>
+                                <li><a href="#">IQAC</a></li>
+                                <li><a href="#">NAAC</a></li>
+                                <li><a href="#">NIRF</a></li>
+                                <li><a href="#">NBA</a></li>
+                                <li><a href="#">UGC</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ADMISSIONS</a></li>
+                        <li><a href="#">ACADEMICS</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">RESEARCH <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">R&D Objectives</a></li>
+                                <li><a href="#">Funded Projects</a></li>
+                                <li><a href="#">Consultancy</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">IPR & CONSULTANCY <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Patents</a></li>
+                                <li><a href="#">Consultancy Services</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">TRAINING AND PLACEMENTS <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Placement Statistics</a></li>
+                                <li><a href="#">Recruiters</a></li>
+                                <li><a href="#">Training</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">INCUBATION <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">CIE</a></li>
+                                <li><a href="#">Startups</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">CAMPUS LIFE <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Student Clubs</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Sports</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slide active"
+            style="background-image: linear-gradient(rgba(0, 33, 71, 0.6), rgba(0, 33, 71, 0.6)), url('https://vardhaman.org/wp-content/uploads/2021/06/banner-1.jpg');">
+            <div class="hero-content">
+                <h1>VARDHAMAN COLLEGE OF ENGINEERING</h1>
+                <p>An Autonomous Institution, Affiliated to JNTUH & Approved by AICTE</p>
+                <p>Accredited by NAAC with A++ Grade</p>
+                <div class="nirf-badge">
+                    <img src="https://via.placeholder.com/100x100.png?text=NIRF" alt="NIRF Ranking">
+                </div>
+                <a href="#" class="btn btn-lg">Explore More</a>
+            </div>
+        </div>
+        <div class="slide"
+            style="background-image: linear-gradient(rgba(0, 33, 71, 0.6), rgba(0, 33, 71, 0.6)), url('https://vardhaman.org/wp-content/uploads/2021/06/banner-2.jpg');">
+            <div class="hero-content">
+                <h1>EXCELLENCE IN EDUCATION</h1>
+                <p>Empowering Students with Knowledge and Skills</p>
+                <a href="#" class="btn btn-lg">Admissions Open</a>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- News Ticker -->
+    <div class="news-ticker-container">
+        <div class="container">
+            <div class="ticker-wrap">
+                <div class="ticker-heading">Latest Updates</div>
+                <div class="ticker-move">
+                    <div class="ticker-item"><a href="#">Vardhaman College of Engineering offers Google Cloud Computing
+                            Foundations curriculum.</a></div>
+                    <div class="ticker-item"><a href="#">Faculty development program on “Machine Learning Concepts & Its
+                            Applications”.</a></div>
+                    <div class="ticker-item"><a href="#">Samardh-2025: National Level Management Fest on 30th & 31st
+                            January 2025.</a></div>
+                    <div class="ticker-item"><a href="#">Admissions Open for B.Tech, M.Tech and MBA Programs for the
+                            Academic Year 2025-26.</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- About Section -->
+        <section class="about-section section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Vardhaman</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="news-panel">
+                        <h3><i class="fas fa-bullhorn"></i> Latest News</h3>
+                        <div class="news-scroll">
+                            <ul>
+                                <li><a href="#">Fee Reimbursement/Scholarship notice <i class="fas fa-file-pdf"></i></a>
+                                </li>
+                                <li><a href="#">EAMCET 2025 Notice Board <i class="fas fa-file-pdf"></i></a></li>
+                                <li><a href="#">Graduation Day Transportation circular <i
+                                            class="fas fa-external-link-alt"></i></a></li>
+                                <li><a href="#">Samardh-2025 Management Fest announcement</a></li>
+                                <li><a href="#">Times Group award recognition</a></li>
+                                <li><a href="#">Google Cloud Computing curriculum announcement</a></li>
+                                <li><a href="#">AICTE-LITE program information</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-text-content">
+                        <p>Vardhaman College of Engineering (VCE), a distinguished autonomous institution
+                            affiliated with JNTU, Hyderabad, is situated in the serene environs of
+                            Shamshabad, Hyderabad. Located within the tranquil Kacharam Village in the Ranga
+                            Reddy district, the campus is strategically positioned away from the urban
+                            clamor, offering an ideal setting for academic pursuits amidst nature’s bounty.
+                        </p>
+                        <p>The college offers a comprehensive range of academic programs, including an array
+                            of undergraduate B.Tech programs in disciplines such as Computer Science and
+                            Engineering (CSE), Information Technology (IT), Electronics and Communication
+                            Engineering (ECE), Electrical and Electronics Engineering (EEE), Mechanical
+                            Engineering (ME), and Civil Engineering (CE).</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Vardhaman Section (Highlights) -->
+        <section class="highlights-section section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Why Vardhaman?</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="highlights-grid">
+                    <!-- Card 1 -->
+                    <div class="highlight-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>Teaching-learning-evaluation</h3>
+                        <p>Outcome-based education process</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="highlight-item">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Placements</h3>
+                        <p>MNC placement opportunities</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="highlight-item">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Entrepreneurial ecosystem</h3>
+                        <p>CIE platform details</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="highlight-item">
+                        <i class="fas fa-building"></i>
+                        <h3>Infrastructure</h3>
+                        <p>State-of-the-art facilities</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="highlight-item">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>Outreach</h3>
+                        <p>Outreach cell information</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="highlight-item">
+                        <i class="fas fa-user-shield"></i>
+                        <h3>Student support</h3>
+                        <p>Anti-ragging cell and safety</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="highlight-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Co-curricular activities</h3>
+                        <p>Various associations</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="highlight-item">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Green campus</h3>
+                        <p>Environmental features</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rankings & Recognition (Logo Carousel) -->
+        <section class="rankings-section section-padding bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Rankings & Recognition</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="logos-slider">
+                    <div class="logos-slide-track">
+                        <!-- Logos -->
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=NIRF" alt="NIRF">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=STUMAGZ"
+                                alt="STUMAGZ"></div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=MSME" alt="MSME">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=MHRD" alt="MHRD">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=MGNGRE" alt="MGNGRE">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=ISO" alt="ISO"></div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=DSIR" alt="DSIR">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=DSIR" alt="DSIR">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=AICTE" alt="AICTE">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=JNTUH" alt="JNTUH">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=NAAC" alt="NAAC">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=ARIIA" alt="ARIIA">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=NBA" alt="NBA"></div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=IEEE" alt="IEEE">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=UGC" alt="UGC"></div>
+
+                        <!-- Duplicate Logos for Infinite Scroll -->
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=NIRF" alt="NIRF">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=STUMAGZ"
+                                alt="STUMAGZ"></div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=MSME" alt="MSME">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=MHRD" alt="MHRD">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=MGNGRE" alt="MGNGRE">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=ISO" alt="ISO"></div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=DSIR" alt="DSIR">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=DSIR" alt="DSIR">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=AICTE" alt="AICTE">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=JNTUH" alt="JNTUH">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=NAAC" alt="NAAC">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=ARIIA" alt="ARIIA">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=NBA" alt="NBA"></div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=IEEE" alt="IEEE">
+                        </div>
+                        <div class="logo-slide"><img src="https://via.placeholder.com/150x80?text=UGC" alt="UGC"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Announcements Section -->
+        <section class="announcements-section section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Announcements</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="announcements-list">
+                    <ul>
+                        <li><a href="#">B.Tech I Year I Semester (R23) Regular/Supplementary Examinations, Feb-2025
+                                <span class="new-badge">NEW</span></a></li>
+                        <li><a href="#">B.Tech I Year I Semester (R22) Supplementary Examinations, Feb-2025 <span
+                                    class="new-badge">NEW</span></a></li>
+                        <li><a href="#">B.Tech I Year I Semester (R19) Supplementary Examinations, Feb-2025</a></li>
+                        <li><a href="#">B.Tech I Year I Semester (R18) Supplementary Examinations, Feb-2025</a></li>
+                        <li><a href="#">B.Tech I Year I Semester (R15) Supplementary Examinations, Feb-2025</a></li>
+                        <li><a href="#">B.Tech I Year I Semester (R14) Supplementary Examinations, Feb-2025</a></li>
+                        <li><a href="#">B.Tech I Year I Semester (R11) Supplementary Examinations, Feb-2025</a></li>
+                    </ul>
+                    <div class="archived-link">
+                        <a href="#" class="btn-link">For Archived Announcements Click Here <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section section-padding bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Life at Vardhaman</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TopS9qj7gy4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-gallery-link">
+                    <a href="#" class="btn">View TEDxVCE Videos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Boxes Section -->
+        <section class="features-section section-padding">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3>Academic Innovations & Conferences</h3>
+                        <p>Exploring new frontiers in education and research through conferences and innovative
+                            practices.</p>
+                        <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h3>EPICS @ VARDHAMAN</h3>
+                        <p>Engineering Projects in Community Service - solving real-world problems for local
+                            communities.</p>
+                        <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-flask"></i></div>
+                        <h3>Research & Development</h3>
+                        <p>Fostering a culture of research and innovation among students and faculty.</p>
+                        <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Recruiters -->
+        <section class="recruiters-section section-padding bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Key Recruiters</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="recruiters-grid">
+                    <div class="recruiter-logo"><i class="fab fa-amazon"></i> Amazon</div>
+                    <div class="recruiter-logo"><i class="fab fa-google"></i> Google</div>
+                    <div class="recruiter-logo"><i class="fab fa-microsoft"></i> Microsoft</div>
+                    <div class="recruiter-logo"><i class="fas fa-building"></i> TCS</div>
+                    <div class="recruiter-logo"><i class="fas fa-code"></i> Infosys</div>
+                    <div class="recruiter-logo"><i class="fas fa-laptop-code"></i> Capgemini</div>
+                    <div class="recruiter-logo"><i class="fas fa-database"></i> Oracle</div>
+                    <div class="recruiter-logo"><i class="fas fa-server"></i> IBM</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Vardhaman College of Engineering<br>
+                        Kacharam, Shamshabad – 501218<br>
+                        Hyderabad, Telangana, India</p>
+                    <p><i class="fas fa-phone"></i> Ph: 08413 - 253335, 253201</p>
+                    <p><i class="fas fa-envelope"></i> info@vardhaman.org</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li><a href="#">Placements</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#">Campus Life</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Alumni</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Vardhaman College of Engineering. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
