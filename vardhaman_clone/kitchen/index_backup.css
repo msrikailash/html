@@ -1,0 +1,673 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+header {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.09);
+}
+
+.navbar {
+    max-width: 100%;
+    height: 130px;
+    margin: auto;
+    padding: 25px 40px;
+    display: flex;
+    font-size: medium;
+    align-items: center;
+    gap: 4px;
+    justify-content: space-between;
+    font-family: montserrat, sans-serif;
+}
+
+.navbar h4:hover {
+    color: #e74c3c;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 760;
+    font-style: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    padding: 15px 24px;
+    font-size: 27px;
+    font-family: times new roman, sans-serif;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #e74c3c;
+}
+
+.btn-reserve {
+    background: #d93b45;
+    color: #fff;
+    padding: 10px 35px;
+    align-items: right;
+    justify-content: center;
+    text-decoration: none;
+    font-family: times new roman, sans-serif;
+    border-radius: 6px;
+    font-size: 27px;
+    transition: 0.3s;
+}
+
+.btn-reserve:hover {
+    background: #c8323c;
+}
+
+/* HEADER SECTION OVER*/
+.Body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 50px;
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 28px;
+    margin: 0;
+}
+
+.reviews-stars {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #f7c600;
+}
+
+
+.left-side {
+    text-align: c;
+    color: white;
+
+}
+
+.left-side h1 {
+    font-size: 110px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 26px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+}
+
+.reviews {
+    font-size: 18 px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+}
+
+/* food img starting*/
+/* --- HERO RIGHT SIDE CARD --- */
+
+.hero {
+    position: relative;
+    width: 420px;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: brightness(0.45);
+}
+
+.stars {
+    display: flex;
+    font-size: 17px;
+    align-items: center;
+    gap: 6px;
+    color: #f7c600;
+
+}
+
+/* Food Card */
+.food-card {
+    position: absolute;
+    bottom: 0;
+    width: 730px;
+    height: 480px;
+    /* Fixed height for the card */
+    background: transparent;
+    border-radius: 0 0 0 0;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    /* Clip content to rounded corners */
+}
+
+.food-img {
+    width: 730px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 0px;
+    transition: transform 0.2s ease;
+}
+
+.food-card:hover .food-img {
+    /* transform: scale(1.2);*/
+    transform: translateY(-15px);
+}
+
+
+/* Content inside the card */
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2f0px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    z-index: 2;
+}
+
+.card-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+    color: #fff;
+}
+
+/* Rating */
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.rating span.stars {
+    letter-spacing: 2px;
+    font-size: 17px;
+    color: #f7c600;
+}
+
+/* Price Badge */
+.price-badge {
+    margin-top: 12px;
+    background: #fff;
+    color: #333;
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Arrows */
+.card-arrows {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    z-index: 3;
+}
+
+.arrow {
+    background: #f1c40f;
+    /* Yellowish color */
+    border: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 0;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.arrow.next {
+    background: #e74c3c;
+    /* Reddish color */
+    border-radius: 0 0 0 0;
+}
+
+.arrow.prev {
+    border-radius: px 0 0 0;
+}
+
+/*hi*/
+.arrow:hover {
+    opacity: 0.9;
+    color: blue;
+}
+
+/* end of food card*/
+/*starting of specail menu  */
+.Menu {
+    text-align: center;
+    font-size: 40px;
+    font-family: times new roman, sans-serif;
+    padding-top: 120px;
+    font-weight: bold;
+
+
+}
+
+/* Special Menu Section */
+.Menu h2 {
+    margin-bottom: 70px;
+
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    height: 510px;
+    padding: 0 50px 100px 50px;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background: bisque;
+    width: 350px;
+
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+}
+
+.menu-img-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.menu-img {
+    width: 100%;
+    height: 371px;
+    object-fit: cover;
+}
+
+.menu-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #f1c40f;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.rating-score {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+.menu-rating .stars {
+    display: flex;
+    gap: 2px;
+    color: #f1c40f;
+    font-size: 12px;
+}
+
+.review-count {
+    color: #999;
+    font-size: 13px;
+    margin-left: auto;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: absolute;
+
+}
+
+/* ========================================
+   PARALLAX/STICKY BACKGROUND SECTION
+   ======================================== */
+
+/* 🎯 BEGINNER GUIDE: What is Parallax? 
+   - It's when the background image stays in one place
+   - While you scroll, content moves OVER the fixed background
+   - Creates a cool "depth" effect
+*/
+
+.parallax-section {
+    /* 📏 HEIGHT: How tall is this section? 
+       - This creates the "empty space" you scroll through
+       - Bigger number = more scrolling space = longer effect
+       - Examples: 
+         * 500px = small section
+         * 100vh = full screen height (vh = viewport height)
+         * 1000px = very tall section
+    */
+    min-height: 500px;
+
+    /* 🖼️ BACKGROUND IMAGE: Which image to show?
+       - Put your image file name inside the url('')
+       - Make sure image is in same folder as this CSS file
+    */
+    background-image: url('alex-haney-CAhjZmVk5H4-unsplash.jpeg');
+
+    /* 📍 POSITION: Where should the image be positioned?
+       - center = keeps image centered (most common)
+       - top = image starts at top
+       - bottom = image starts at bottom
+    */
+    background-position: center;
+
+    /* 🔁 REPEAT: Should image repeat/tile?
+       - no-repeat = show image only once (recommended)
+       - repeat = tiles the image (like wallpaper pattern)
+    */
+    background-repeat: no-repeat;
+
+    /* 📐 SIZE: How should image fit?
+       - cover = fills entire section, might crop image
+       - contain = shows full image, might have empty space
+       - 100% 100% = stretches to fit (might look distorted)
+    */
+    background-size: cover;
+
+    /* ✨ THE MAGIC PROPERTY! ✨
+       - fixed = background STAYS IN PLACE when you scroll (parallax effect!)
+       - scroll = background moves normally with page (default, boring)
+       - Try changing 'fixed' to 'scroll' to see the difference!
+    */
+    background-attachment: fixed;
+
+    /* 🔧 POSITION: Needed for overlay effect to work */
+    position: relative;
+}
+
+/* 🌑 DARK OVERLAY (Optional)
+   - This adds a semi-transparent dark layer over your image
+   - Makes text easier to read if you add content on top
+   - DELETE THIS WHOLE SECTION if you don't want the dark layer
+*/
+.parallax-section::before {
+    content: '';
+    /* Required for ::before to work */
+    position: absolute;
+    /* Overlays on top of background */
+    top: 0;
+    /* Start from top edge */
+    left: 0;
+    /* Start from left edge */
+    width: 100%;
+    /* Cover full width */
+    height: 100%;
+    /* Cover full height */
+
+    /* 🎨 OVERLAY COLOR & TRANSPARENCY
+       - rgba(0, 0, 0, 0.3) means:
+         * 0, 0, 0 = black color (red, green, blue values)
+         * 0.3 = 30% darkness (0 = invisible, 1 = solid black)
+       - Try these:
+         * rgba(0, 0, 0, 0.1) = very light (10% dark)
+         * rgba(0, 0, 0, 0.5) = medium (50% dark)
+         * rgba(0, 0, 0, 0.7) = very dark (70% dark)
+         * rgba(255, 0, 0, 0.3) = red tint instead of black!
+    */
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* News Section */
+.news-section {
+    padding: 80px 50px;
+
+}
+
+.news-section h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    color: white;
+}
+
+/* Container for all cards */
+.news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Big Cards (top 2) */
+.big-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.big-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Small Cards (bottom 3) */
+.small-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.small-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Position cards in grid */
+.big-card:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.big-card:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.small-card:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.small-card:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.small-card:nth-child(5) {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+/* Image container */
+.card-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.small-card .card-image {
+    height: 250px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card-image:hover img {
+    transform: scale(1.2);
+}
+
+/* Red badge for big cards */
+.red-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background: #e74c3c;
+}
+
+/* Title on big card images */
+.card-image h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 25px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+/* Small badges */
+.blue-badge {
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background: #3498db;
+}
+
+.dark-badge {
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background: #2c3e50;
+}
+
+.green-badge {
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background: #1abc9c;
+}
+
+/* Text area for small cards */
+.card-text {
+    padding: 25px;
+}
+
+.card-text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Info row with badge and date */
+.card-info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.date {
+    font-size: 13px;
+    color: #999;
+}
